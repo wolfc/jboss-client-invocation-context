@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  vi:ts=3:sw=3:expandtab:
+-->
+<project
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <parent>
+      <groupId>org.jboss</groupId>
+      <artifactId>jboss-parent</artifactId>
+      <version>8</version>
+   </parent>
+
+   <modelVersion>4.0.0</modelVersion>
+
+   <groupId>org.jboss.client</groupId>
+   <artifactId>jboss-client-invocation-context</artifactId>
+   <version>0.1.0-SNAPSHOT</version>
+
+   <name>JBoss Client Invocation Context</name>
+
+   <build>
+      <plugins>
+         <plugin>
+            <artifactId>maven-release-plugin</artifactId>
+            <version>2.0</version>
+         </plugin>
+      </plugins>
+   </build>
+
+   <dependencies>
+      <dependency>
+         <groupId>junit</groupId>
+         <artifactId>junit</artifactId>
+         <version>4.5</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.jboss.spec.javax.ejb</groupId>
+         <artifactId>jboss-ejb-api_3.1_spec</artifactId>
+         <version>1.0.1.Final</version>
+         <scope>provided</scope>
+      </dependency>
+   </dependencies>
+   
+   <scm>
+      <connection>scm:git:git://github.com/wolfc/jboss-client-invocation-context.git</connection>
+      <developerConnection>scm:git:git@github.com:wolfc/jboss-client-invocation-context.git</developerConnection>
+      <url>http://github.com/wolfc/jboss-client-invocation-context</url>
+   </scm>
+</project>
